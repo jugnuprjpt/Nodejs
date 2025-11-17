@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         h1 {
+            color: red;
+         }
+    </style>
+</head>
+<body>
+    <h1>Header</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aspernatur harum explicabo, velit quidem repellat at molestiae maiores praesentium iure fuga amet, accusantium omnis veniam! Earum quibusdam suscipit corrupti numquam.</p>
+     
+    <h2 id="dispaly">0</h2>
+    <button id="increse">+</button> 
+    <button id="decresae">-</button>
+<script>
+        const button1 = document.getElementById("increse")
+        const button2 = document.getElementById("decresae")
+        const display = document.getElementById("dispaly")
+        let count = 0;
+
+        button1.addEventListener("click",()=> {
+            count = count + 1; 
+            display.innerHTML=count
+        })
+
+           button2.addEventListener("click",()=> {
+            count = count - 1; 
+            display.innerHTML=count
+        })
+        
+</script>
+
+</body>
+</html>
